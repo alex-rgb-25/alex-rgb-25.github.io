@@ -1,0 +1,312 @@
+.nav-link, .navbar-brand{
+    font-family: 'Lacquer', sans-serif;
+    font-size: 25px;
+}
+
+
+
+
+#piz{
+  max-width: 100px;
+}
+
+.cont1 {
+    position: relative;
+    border: 2px solid rgb(210, 198, 198);
+    border-radius:5px;
+    margin-bottom:10 px;
+  }
+
+.ovee {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 30px;
+  }
+
+  .cont1:hover .ovee {
+    opacity: 1;
+  }
+
+
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+#gal{
+    display: inline-block;
+float: right;
+font-size: 16px;
+margin-left: 10px;
+margin-right: 10px;
+transition: color 0.5s ease;
+padding-top: 10px;
+
+font-family: 'Lacquer', sans-serif;
+    font-size: 25px;
+padding: 0;
+    padding-top: 0px;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+
+margin-bottom: 10px;
+color: #1a181a;
+font-weight: bold;
+margin-top: 8px;
+}
+
+
+.txt{
+    font-family: 'Inconsolata', monospace;
+    font-size: 17px;
+
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 260px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 95%;
+  margin-left: -100px;
+}
+
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11{ display: none;}
+
+.container2{
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		width: 70%;
+		height: 0;
+		padding-bottom: 38%;
+	  user-select: none;
+		background-color: #1c1c1c;
+		border: solid 10px #616161;
+		border-radius:10px ; 
+	}
+
+	.container2 .slide_img{
+		position: absolute;
+		width: 100%;;
+		height: 100%;
+	}
+	.container2 .slide_img img{
+		width: inherit;
+		height: inherit;
+	}
+
+	 .prev, .next{
+		width: 12%;
+		height: inherit;
+		position: absolute;
+		top:0; 
+		background-color: rgba(88, 88, 88,.2);
+		color:rgba(244, 244, 244,.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.next{right:0;}
+	.prev{left:0;}
+
+	label span{
+		position: absolute;
+		font-size: 100pt;
+		top: 50%;
+	 	transform: translateY(-50%);
+	}
+
+	.prev:hover, .next:hover{
+		transition: .3s;
+		background-color: rgba(88, 88, 89,.8);
+		color: #ffffff; 
+	}
+
+.container2 #nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+}
+
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five,
+  #i6:checked ~ #six,
+  #i7:checked ~ #seven,
+  #i8:checked ~ #eight,
+  #i9:checked ~ #nine,
+  #i10:checked ~ #ten,
+  #i11:checked ~ #eleven  
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5,
+  #i6:checked  ~  #nav_slide #dot6,
+  #i7:checked  ~  #nav_slide #dot7,
+  #i8:checked  ~  #nav_slide #dot8,
+  #i9:checked  ~  #nav_slide #dot9,
+  #i10:checked  ~  #nav_slide #dot10,
+  #i11:checked  ~  #nav_slide #dot11
+	{ background-color: rgba(255,255,255,.9);}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}		
+
+/* .yt{
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	width: 150px;
+	height:50px;
+	border: outset #2c2c2c 4px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30pt;
+	transition: .5s;
+}
+
+.yt a{
+	text-decoration: none;
+	color: #4c4c4c;
+	transition: .5s;
+}
+
+.yt:hover{
+	background: #4c4c4c;
+	transition: .3s;
+}
+
+.yt:hover a{
+	color: #fff;
+	transition: .3s;
+}
+ */
+@media screen and (max-width: 685px){
+	.container2{
+		border: none;
+		width: 100%;
+		height: 0;
+		padding-bottom: 55%; 
+	}	
+	
+	label span { font-size: 50pt; }
+	
+	.prev, .next{
+		width: 15%;
+	}	
+	#nav_slide .dots{
+		width: 12px;
+		height: 12px;
+	}
+}
+@media screen  and(min-width: 970px){
+	.me{ display: none;}
+}
+
